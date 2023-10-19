@@ -80,6 +80,10 @@
       <file file_name="../../deca_driver/deca_params_init.c" />
     </folder>
     <folder Name="CustomLibraries" />
+    <configuration
+      Name="Debug"
+      arm_assembler_variant="gcc"
+      arm_linker_variant="GNU" />
   </project>
   <configuration
     Name="Release"
