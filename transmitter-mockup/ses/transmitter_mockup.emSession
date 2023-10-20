@@ -40,8 +40,8 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="2" useTextEdit="1" useBinaryEdit="0" left="0" path="transmitter_mockup.emProject" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="169" useTextEdit="1" useBinaryEdit="0" left="0" path="main.c" selected="1" top="46" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="2" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transmitter_mockup.emProject" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="169" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="1" top="46" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="transmitter_mockup" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <ARMCrossStudioWindow activeProject="transmitter_mockup" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

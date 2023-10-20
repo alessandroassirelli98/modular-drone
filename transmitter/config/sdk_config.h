@@ -2833,21 +2833,21 @@
  
 
 #ifndef TIMER2_ENABLED
-#define TIMER2_ENABLED 0
+#define TIMER2_ENABLED 1
 #endif
 
 // <q> TIMER3_ENABLED  - Enable TIMER3 instance
  
 
 #ifndef TIMER3_ENABLED
-#define TIMER3_ENABLED 0
+#define TIMER3_ENABLED 1
 #endif
 
 // <q> TIMER4_ENABLED  - Enable TIMER4 instance
  
 
 #ifndef TIMER4_ENABLED
-#define TIMER4_ENABLED 0
+#define TIMER4_ENABLED 1
 #endif
 
 // </e>
@@ -3894,6 +3894,8 @@
 #ifndef NRF_FPRINTF_ENABLED
 #define NRF_FPRINTF_ENABLED 1
 #endif
+
+#define NRF_FPRINTF_FLAG_AUTOMATIC_CR_ON_LF_ENABLED 0
 
 // <e> NRF_FSTORAGE_ENABLED - nrf_fstorage - Flash abstraction library
 //==========================================================
