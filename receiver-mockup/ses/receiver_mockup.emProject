@@ -78,6 +78,7 @@
       <file file_name="../../deca_driver/deca_device.c" />
       <file file_name="../../deca_driver/deca_params_init.c" />
     </folder>
+    <configuration Name="Debug" debug_target_connection="GDB Server" />
   </project>
   <configuration
     Name="Release"
@@ -88,6 +89,15 @@
   <configuration
     Name="Debug"
     c_preprocessor_definitions="DEBUG; DEBUG_NRF"
+    debug_target_connection="GDB Server"
     gcc_debugging_level="Level 3"
-    gcc_optimization_level="None" />
+    gcc_optimization_level="None"
+    gdb_server_allow_memory_access_during_execution="Yes"
+    gdb_server_autostart_server="No"
+    gdb_server_command_line=""
+    gdb_server_ignore_checksum_errors="Yes"
+    gdb_server_port="61234"
+    gdb_server_register_access="General and Individual"
+    gdb_server_reset_command="reset"
+    gdb_server_type="ST-LINK" />
 </solution>

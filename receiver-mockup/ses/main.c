@@ -49,7 +49,7 @@ nrf_pwm_sequence_t const seq =
 #define RECEIVER_ADDR 0xC8
 // Define the IO
 #define FRAME_LEN_MAX 127
-#define CH 8
+#define CH 15
 #define PIN_DEBUG 27
 
 // Static declaration

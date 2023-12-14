@@ -118,13 +118,13 @@ int main(void) {
   while (1) {
 
     if (data_ready == BITMASK_WHEN_READY) {
-//    nrf_gpio_pin_clear(PIN_DEBUG);
+    //nrf_gpio_pin_set(PIN_DEBUG);
 
     if(!is_init){
         send_message(tx_conf, tx_conf_n);
         is_init = true;
         data_ready = data_ready & 0x00; 
-//        nrf_gpio_pin_set(PIN_DEBUG);
+        //nrf_gpio_pin_clear(PIN_DEBUG);
     }
     else{
       for (int j = 1; j < NUMBER_OF_CHANNELS_ENABLED * 2; j += 2) {
@@ -137,14 +137,14 @@ int main(void) {
       data_ready = data_ready & 0x00; 
       // Reset the last bit
       // Send data and wait
-//      if (cnt % cnt_print == 0) {
-//        print_msg(tx_msg, NUMBER_OF_CHANNELS_ENABLED * 2);
-//       }
-//      cnt ++;
-//      if(cnt%cnt_print == 0){
-//        print_msg(tx_msg, NUMBER_OF_CHANNELS_ENABLED * 2);
-//        }
-//      cnt ++;
+      //if (cnt % cnt_print == 0) {
+      //  print_msg(tx_msg, NUMBER_OF_CHANNELS_ENABLED * 2);
+      // }
+      //cnt ++;
+      //if(cnt%cnt_print == 0){
+      //  print_msg(tx_msg, NUMBER_OF_CHANNELS_ENABLED * 2);
+      //  }
+      cnt ++;
     }
     }
   }
@@ -191,11 +191,11 @@ static void gpiote_handler(nrf_drv_gpiote_pin_t pin, nrf_gpiote_polarity_t actio
       data_ready = data_ready | channel_get_mask(ch);
       channel_set_dc(ch, (uint8_t)(100 - (channel_get_t1(ch) - channel_get_t2(ch)) * to_dc));
 
-      //      printf("Interrupt Low to High -- %d\r\n", ch1_times.t2);
+            //printf("data_ready  %d\n", data_ready);
 
     } else {
       channel_set_t2(ch, nrf_drv_timer_capture_get(channel_get_timer_channel(ch), 0));
-      //      printf("Interrupt High to Low -- %d\r\n", ch1_times.t1);
+            //printf("Interrupt High to Low --");
     }
   }
 //  nrf_gpio_pin_set(PIN_DEBUG);
